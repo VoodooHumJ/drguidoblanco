@@ -1229,8 +1229,9 @@ input::-moz-focus-inner {
   margin: 0;
   padding: 0;
   position: absolute;
-  right: 80px;
-  top: 36px;
+  left: 50%;
+  top: 85px;
+  
 }
 
 .home-logo a {
@@ -1241,12 +1242,13 @@ input::-moz-focus-inner {
   border: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  filter: invert(100%);
+  
 }
 
 .home-logo img {
-  width: 300px;
-   
+  width: 100px;
+  display: block;
+  margin: 0 auto;
 }
 
 
@@ -1264,26 +1266,29 @@ input::-moz-focus-inner {
 
 .home-content h3 {
   font-family: "metropolis-medium", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   line-height: 1.286;
   text-transform: uppercase;
   letter-spacing: .3rem;
   color: white;
   margin-top: 0;
   margin-bottom: 3rem;
-  padding-left: 55px;
+  text-align: center;
+  padding-left: 0;
   position: relative;
+  left: -20%;
 }
 
 .home-content h3::before {
   content: "";
   display: block;
   background-color: #1c2dc5;
-  width: 40px;
+  width: 80px;
   height: 1px;
   position: absolute;
-  left: 0;
-  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 150%;
 }
 
 .home-content h1 {
