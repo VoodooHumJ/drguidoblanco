@@ -1774,6 +1774,19 @@ html.no-csstransitions .home-content__main {
   .info-is-visible .info-toggle::after {
     content: "";
   }
+  
+  .home-logo img {
+    width: 80px;
+  }
+  .home-content h3 {
+    font-size: 1rem; /* Adjusted for smaller screens */
+    text-align: center;
+    padding-left: 0;
+    position: relative;
+    left: 0; /* Reset positioning */
+    margin: 0 auto 2rem; /* Tighter spacing */
+    width: 90%; /* Wider text container */
+  }
 
 }
 
@@ -1792,6 +1805,16 @@ html.no-csstransitions .home-content__main {
     min-width: 3rem;
   }
 
+  .home-content h3 {
+    font-size: 1rem; /* Adjusted for smaller screens */
+    text-align: center;
+    padding-left: 0;
+    position: relative;
+    left: 0; /* Reset positioning */
+    margin: 0 auto 2rem; /* Tighter spacing */
+    width: 90%; /* Wider text container */
+  }
+
   .home-content__counter .time span {
     font-size: 1.6rem;
   }
@@ -1801,8 +1824,14 @@ html.no-csstransitions .home-content__main {
     padding-right: 5.5rem;
   }
   .home-logo img {
-    width: 100px;
+    width: 80px;
      
+  }
+  .home-logo {
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    top: 60px;
   }
 
   .info-is-visible .info-toggle::after {
@@ -1858,8 +1887,16 @@ html.no-csstransitions .home-content__main {
     padding-right: 25px;
     padding-left: 25px;
   }
+
+  .home-logo {
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    top: 20px;
+  }
+
   .home-logo img {
-    width: 100px;
+    width: 80px;
      
      
   }
@@ -1924,7 +1961,7 @@ html.no-csstransitions .home-content__main {
     width: 80px;
     margin: 0 auto; /* Ensure image stays centered within container */
   }
-  
+
   .info-is-visible .info-toggle::after {
     content: "";
   }
@@ -1940,10 +1977,7 @@ html.no-csstransitions .home-content__main {
     right: 30px;
   }
 
-  .home-logo img {
-    width: 30px;
-    
-  }
+  
 
   .home-content h3 {
     font-size: 1rem; /* Adjusted for smaller screens */
@@ -1982,13 +2016,49 @@ html.no-csstransitions .home-content__main {
     margin-top: 7.8rem;
   }
   .home-logo img {
-    width: 150px;
+    width: 80px;
      
   }
   .info-is-visible .info-toggle::after {
     content: "";
   }
 
+}
+
+@media only screen and (max-width:300px) {
+  .home-logo {
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    top: 20px;
+  }
+
+  .home-logo img {
+    width: 20px; /* Reduced logo size */
+  }
+
+  .home-content h1 {
+    font-size: 2.8rem; /* Smaller heading */
+  }
+
+  .home-content h3 {
+    font-size: 0.9rem; /* Tiny subheading */
+    width: 95%; /* Fuller width */
+    margin: 0 auto 1.5rem; /* Tighter spacing */
+  }
+
+  .home-content h3::before {
+    width: 40px; /* Shorter line */
+    top: 140%; /* Lower position */
+  }
+
+  .home-content__text p {
+    font-size: 1.4rem; /* Smaller body text */
+  }
+  
+  .home-copyright {
+    padding: 25px 15px; /* Compact copyright */
+  }
 }
 
 
