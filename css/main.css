@@ -1801,7 +1801,7 @@ html.no-csstransitions .home-content__main {
     padding-right: 5.5rem;
   }
   .home-logo img {
-    width: 250px;
+    width: 100px;
      
   }
 
@@ -1815,6 +1815,19 @@ html.no-csstransitions .home-content__main {
 @media only screen and (max-width:600px) {
   .home-content h3 {
     font-size: 1.3rem;
+    text-align: center;
+    padding-left: 0;
+    position: relative;
+    left: 0; /* Reset positioning */
+    margin: 0 auto 3rem; /* Center horizontally */
+    width: 70%; /* Better text containment */
+  }
+
+  .home-content h3::before {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px; /* Adjusted line length */
+    top: 120%; /* Better vertical alignment */
   }
 
   .home-content h1 {
@@ -1846,8 +1859,8 @@ html.no-csstransitions .home-content__main {
     padding-left: 25px;
   }
   .home-logo img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+     
      
   }
   .info-is-visible .info-toggle::after {
@@ -1863,11 +1876,17 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-content h3 {
+    font-size: 1.1rem;
+    text-align: center;
     padding-left: 0;
+    position: relative;
+    left: 0; /* Reset any previous left positioning */
+    margin: 0 auto 3rem; /* Proper centering */
+    width: 80%; /* Better mobile width */
   }
 
   .home-content h3::before {
-    display: none;
+    display: block;
   }
 
   .home-content h1 {
@@ -1896,11 +1915,16 @@ html.no-csstransitions .home-content__main {
   .home-copyright span::after {
     display: none;
   }
-  .home-logo img {
-    width: 200px;
-    height: 100px;
-     
+  .home-logo {
+    left: 50%; /* Changed from 10% to center horizontally */
+    transform: translateX(-50%); /* Add this for perfect centering */
+    top: 30px;
   }
+  .home-logo img {
+    width: 80px;
+    margin: 0 auto; /* Ensure image stays centered within container */
+  }
+  
   .info-is-visible .info-toggle::after {
     content: "";
   }
@@ -1917,8 +1941,25 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-logo img {
-    width: 200px;
-    height: 100px;
+    width: 30px;
+    
+  }
+
+  .home-content h3 {
+    font-size: 1rem; /* Adjusted for smaller screens */
+    text-align: center;
+    padding-left: 0;
+    position: relative;
+    left: 0; /* Reset positioning */
+    margin: 0 auto 2rem; /* Tighter spacing */
+    width: 90%; /* Wider text container */
+  }
+
+  .home-content h3::before {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px; /* Shorter line */
+    top: 130%; /* Adjusted vertical position */
   }
 
   .home-content h1 {
